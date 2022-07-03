@@ -25,7 +25,7 @@ if ($stmt->num_rows == 1 ) {
     echo "Found 1 person with that username<br>";
     $stmt->fetch();
     //echo 'fetched ' . $fetched_pass . ' entered ' . $password;
-    if (password_verify($password, $fetched_pass)) {
+    if (strcmp($password, $fetched_pass) == 0) {
         echo " pw matches<br>";
         echo "<p>Login success</p>"; 
         $_SESSION['username'] = $username;
