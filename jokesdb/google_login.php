@@ -28,7 +28,7 @@ $client->addScope("profile");
 
 $service= new Google_Service_Oauth2($client);
 echo 'connection created';
-
+/*
 //There are multiple cases that this page handles depending on what GET values and Session variables are set.
 
 //Case 1 - logout the user
@@ -149,7 +149,7 @@ else
 	echo "<br>Session values = <br>";
 	echo "<pre>";
 	print_r($_SESSION);
-	echo "</pre>";
+	echo "</pre>";*/
 ?>
 <!-- add some simple styles according to your preference -->
 <style>
