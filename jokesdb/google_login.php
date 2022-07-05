@@ -6,7 +6,7 @@ session_start();
 echo 'adding google auth';
 require_once('vendor/autoload.php');
 echo 'google auth added';
-
+ /*
 $client_id = "106636728529-2i5kaeki866pua1l6bs9f7ofut0ljh67.apps.googleusercontent.com";
 $client_secret = "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";
 
@@ -151,7 +151,7 @@ else
 	echo "<br>Session values = <br>";
 	echo "<pre>";
 	print_r($_SESSION);
-	echo "</pre>";
+	echo "</pre>"; */
 ?>
 <!-- add some simple styles according to your preference -->
 <style>
