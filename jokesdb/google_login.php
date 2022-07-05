@@ -19,14 +19,14 @@ $port = 3306;
 #######################################
 echo 'creating connection';
 //create a new connection to the Google login service
-$client = new Google_Client();
+/*$client = new Google_Client();
 $client->setClientId($client_id);
 $client->setClientSecret($client_secret);
 $client->setRedirectUri($redirect_url);
 $client->addScope("email");
 $client->addScope("profile");
 
-$service= new Google_Service_Oauth2($client);
+$service= new Google_Service_Oauth2($client);*/
 echo 'connection created';
 /*
 //There are multiple cases that this page handles depending on what GET values and Session variables are set.
