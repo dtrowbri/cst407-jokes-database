@@ -82,7 +82,7 @@ $mysqli = new mysqli($host_name, $db_username,$db_password, $db_name, $port);
 		die('Error : ('. $mysqli->connect_errno .') '. $mysqli->connect_error);
 	}
 //check if user exists in google_users table
-$stmt = $mysqli->prepare("SELECT id, username, password, google_id, google_name, google_email, google_picture_link FROM users WHERE google_id=?");
+$stmt = $mysqli->prepare("SELECT user_id, username, password, google_id, google_name, google_email, google_picture_link FROM users WHERE google_id=?");
 $stmt->bind_param("s", $user->id);
 $stmt->execute();
 $stmt->store_result();
