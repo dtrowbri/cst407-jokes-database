@@ -5,8 +5,8 @@ ini_set('display_errors', 1);
 session_start();
 require_once('../vendor/autoload.php');
 echo 'got google auth <br />';
-//$client_id = "106636728529-2i5kaeki866pua1l6bs9f7ofut0ljh67.apps.googleusercontent.com";
-//$client_secret = "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";
+$client_id = "106636728529-2i5kaeki866pua1l6bs9f7ofut0ljh67.apps.googleusercontent.com";
+$client_secret = "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";
 echo 'secret secret i got a secret';
 //$redirect_url = "https://cst407-jokes-database.herokuapp.com/jokesdb/google_login.php"
 echo 'redirect url';
