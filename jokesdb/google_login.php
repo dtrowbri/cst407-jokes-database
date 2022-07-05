@@ -3,9 +3,9 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 session_start();
-echo 'adding google auth';
-//require_once('vendor/autoload.php');
-echo 'google auth added';
+echo 'adding google auth <br/>';
+require_once('vendor/autoload.php');
+echo 'google auth added <br />';
  /*
 $client_id = "106636728529-2i5kaeki866pua1l6bs9f7ofut0ljh67.apps.googleusercontent.com";
 $client_secret = "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";
@@ -163,7 +163,3 @@ img{
 }
 
 </style>
-
-
-
-?>
