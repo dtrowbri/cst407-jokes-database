@@ -3,8 +3,9 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 session_start();
-
+echo 'adding google auth';
 require_once('vendor/autoload.php');
+echo 'google auth added';
 
 $client_id = "106636728529-2i5kaeki866pua1l6bs9f7ofut0ljh67.apps.googleusercontent.com";
 $client_secret = "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";
@@ -18,7 +19,7 @@ $host_name = "n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"; //MySQ
 $db_name = "g2qpsnk0zp3m6lt2"; //Database Name
 $port = 3306;
 #######################################
-
+echo 'creating connection';
 //create a new connection to the Google login service
 $client = new Google_Client();
 $client->setClientId($client_id);
@@ -28,6 +29,7 @@ $client->addScope("email");
 $client->addScope("profile");
 
 $service= new Google_Service_Oauth2($client);
+echo 'connection created';
 
 //There are multiple cases that this page handles depending on what GET values and Session variables are set.
 
