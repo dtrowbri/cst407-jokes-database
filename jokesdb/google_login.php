@@ -4,12 +4,13 @@ ini_set('display_errors', 1);
 
 session_start();
 require_once('../vendor/autoload.php');
-
+echo 'got google auth <br />';
 $client_id = "106636728529-2i5kaeki866pua1l6bs9f7ofut0ljh67.apps.googleusercontent.com";
 $client_secret = "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";
-
+echo 'secret secret i got a secret';
 $redirect_url = "https://cst407-jokes-database.herokuapp.com/jokesdb/google_login.php"
-
+echo 'redirect url';
+/*
 #############My SQL Detail#############
 $db_username = "jf1mwibua5u1vdu0"; //Database Username
 $db_password = "iry680nyu33gjndd";//Database Password
@@ -17,7 +18,7 @@ $host_name = "n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com"; //MySQ
 $db_name = "g2qpsnk0zp3m6lt2"; //Database Name
 $port = 3306;
 #######################################
-echo 'creating connection';
+echo 'creating connection';*/
 //create a new connection to the Google login service
 /*$client = new Google_Client();
 $client->setClientId($client_id);
