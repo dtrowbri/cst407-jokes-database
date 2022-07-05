@@ -92,7 +92,7 @@ if ($stmt->num_rows > 0) {
 	// we found a record in the users table. This is a returning user.
 	echo "<h2>Welcome back " .$user->name. "!</h2>";
 	echo "<p><a href='" .$redirect_url. "?logout=1'>Log Out</a></p>";
-	echo "<p><a href='index.php'>Go to main page</a></p>"; 
+	echo "<p><a href='../index.php'>Go to main page</a></p>"; 
 
 	while ($stmt->fetch()) {
 		echo "According to the database records you are:<br>";
@@ -145,7 +145,7 @@ else
 	echo "<li>User Email: " . $user->email .  "</li>"; 
 	echo "</ul>";
 	echo "<p>Now go check the database to see if the new user has been inserted into the table.</p>";
-	echo "<a href ='index.php'>Return to the main page</a>"; 
+	echo "<a href ='../index.php'>Return to the main page</a>"; 
 
 	echo "<br>Session values = <br>";
 	echo "<pre>";
