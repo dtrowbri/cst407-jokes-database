@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-//session_start();
+session_start();
 echo 'adding google auth';
 //require_once('vendor/autoload.php');
 echo 'google auth added';
